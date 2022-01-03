@@ -1,6 +1,6 @@
 "use strict";
 
-import { createElement as _createElement, Fragment as _Fragment, createContext } from "react";
+import { createElement as _createElement, Fragment as _Fragment, createContext as _createContext } from "react";
 const createElement = _createElement;
 const Fragment = _Fragment;
 
@@ -20,7 +20,7 @@ export function elementKeyed(component) { return (props) =>
 export function fragment(children)  {   return createElement.apply(null, [Fragment, null].concat(children));   }
 
 export function createContext(defaultValue) { return () =>
-  createContext(defaultValue);   }
+  _createContext(defaultValue);   }
 
 export function contextProvider(context) { return context.Provider; }
 
