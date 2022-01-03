@@ -1,5 +1,5 @@
 "use strict";
 
-const React = require("react");
+import { StrictMode } from "react";
 
-exports.strictMode_ = React.StrictMode;
+export const strictMode_ = StrictMode;
